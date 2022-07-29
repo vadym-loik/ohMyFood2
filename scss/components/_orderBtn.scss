@@ -1,0 +1,11 @@
+@import '../utils/mixins';
+
+.order {
+  @include flexCenter;
+  margin-bottom: 30px;
+}
+
+.order__btn {
+  @include btn;
+  padding: 15px 70px;
+}

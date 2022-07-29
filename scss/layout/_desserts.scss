@@ -1,0 +1,21 @@
+@import '../utils/mixins';
+
+.desserts {
+  margin-bottom: 40px;
+}
+
+.desserts__header {
+  @include menuHead;
+}
+
+.desserts__wrap {
+  @include menuCard;
+
+  &:hover .desserts__overlay {
+    transform: translateX(0%);
+  }
+}
+
+.desserts__overlay {
+  @include overlay;
+}

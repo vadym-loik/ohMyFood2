@@ -1,0 +1,30 @@
+.menu {
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+
+  background-color: var(--background-color);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+
+  padding: 25px 15px;
+}
+
+.menu__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.menu__heading {
+  font-family: var(--second-font);
+  font-size: var(--h1-font-size);
+}
+
+.price {
+  font-weight: 500;
+}

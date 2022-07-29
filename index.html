@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <title>OhMyFood</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <img src="./img/logo/ohmyfood.png" alt="logo" class="logo__img" />
+          </a>
+        </div>
+        <nav class="nav">
+          <div class="nav__wrap">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="nav__text">Paris, Belleville</p>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- EXPLORE -->
+      <section class="explore container">
+        <div class="explore__wrap">
+          <h1 class="explore__heading">Book the menu you like</h1>
+          <p class="explore__text">
+            Discover top-of-the-art restaurants we <br />
+            picked for you
+          </p>
+          <a href="#restaurants" class="explore__link">
+            <button type="button" class="explore__btn">
+              Explore our restaurants
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <!-- INSTRUCTIONS -->
+      <section class="instructions container">
+        <div class="instructions__wrap">
+          <h2 class="instructions__heading">How it works</h2>
+          <ul class="instructions__list">
+            <li class="instructions__item">
+              <div class="instructions__number">1</div>
+              <div class="instructions__icon">
+                <i
+                  class="fa-solid fa-mobile-screen-button fa-fw"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              Choose a restaurant
+            </li>
+            <li class="instructions__item">
+              <div class="instructions__number">2</div>
+              <div class="instructions__icon">
+                <i class="fa-solid fa-list-ul fa-fw" aria-hidden="true"></i>
+              </div>
+              Create your menu
+            </li>
+            <li class="instructions__item">
+              <div class="instructions__number">3</div>
+              <div class="instructions__icon">
+                <i class="fa-solid fa-store fa-fw" aria-hidden="true"></i>
+              </div>
+              Go enjoy it at the restaurant
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- RESTAURANTS -->
+      <section id="restaurants" class="restaurants container">
+        <h2 class="restaurants__heading">Restaurants</h2>
+        <div class="restaurants__wrapper">
+          <div class="restaurants__card">
+            <a href="palette.html" class="restaurants__link">
+              <img
+                src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="plate with food"
+                class="restaurants__img"
+              />
+              <div class="restaurants__wrap">
+                <div class="restaurants__new">New</div>
+                <div>
+                  <h3 class="restaurants__head">The Full Palette</h3>
+                  <p class="restaurants__text">New York</p>
+                </div>
+                <i class="fa-regular fa-heart fa-2x"></i>
+              </div>
+            </a>
+          </div>
+          <div class="restaurants__card">
+            <a href="plate.html" class="restaurants__link">
+              <img
+                src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="plate with food"
+                class="restaurants__img"
+              />
+              <div class="restaurants__wrap">
+                <div class="restaurants__new">New</div>
+                <div>
+                  <h3 class="restaurants__head">The Enchanted Plate</h3>
+                  <p class="restaurants__text">New York</p>
+                </div>
+                <i class="fa-regular fa-heart fa-2x"></i>
+              </div>
+            </a>
+          </div>
+          <div class="restaurants__card">
+            <a href="bastille.html" class="restaurants__link">
+              <img
+                src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="plate with food"
+                class="restaurants__img"
+              />
+              <div class="restaurants__wrap">
+                <div>
+                  <h3 class="restaurants__head">Bastille</h3>
+                  <p class="restaurants__text">New York</p>
+                </div>
+                <i class="fa-regular fa-heart fa-2x"></i>
+              </div>
+            </a>
+          </div>
+          <div class="restaurants__card">
+            <a href="gourmand.html" class="restaurants__link">
+              <img
+                src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="plate with food"
+                class="restaurants__img"
+              />
+              <div class="restaurants__wrap">
+                <div>
+                  <h3 class="restaurants__head">Le Gourmand</h3>
+                  <p class="restaurants__text">New York</p>
+                </div>
+                <i class="fa-regular fa-heart fa-2x"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer container">
+      <div class="container">
+        <div class="footer__logo">
+          <svg class="footer__logo--img">
+            <use href="./img/logo/ohmyfood@2x.svg#ohmyfood"></use>
+          </svg>
+        </div>
+        <div class="footer__wrap">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <i class="fa-solid fa-utensils fa-fw" aria-hidden="true"></i>
+                Suggest a restaurant</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <i
+                  class="fa-solid fa-handshake-angle fa-fw"
+                  aria-hidden="true"
+                ></i>
+                Become a partner</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Legal</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/dd540693ee.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

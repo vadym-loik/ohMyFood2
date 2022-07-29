@@ -1,0 +1,26 @@
+@import '../utils/mixins';
+
+.logo {
+  text-align: center;
+
+  margin-bottom: 10px;
+  padding-top: 20px;
+
+  &__img {
+    width: 200px;
+  }
+}
+
+.nav {
+  &__wrap {
+    @include flexCenter;
+    box-shadow: inset 0px 5px 5px 0px var(--shadow);
+    background-color: #e6e9eb;
+
+    padding: 10px 0;
+  }
+
+  .fa-location-dot {
+    margin-right: 15px;
+  }
+}

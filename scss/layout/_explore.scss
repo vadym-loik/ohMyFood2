@@ -1,0 +1,24 @@
+.explore__wrap {
+  background-color: var(--background-color);
+  text-align: center;
+
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.explore__heading {
+  font-size: var(--h1-font-size);
+  margin-bottom: 30px;
+}
+
+.explore__text {
+  margin-bottom: 30px;
+  font-size: var(--h3-font-size);
+  color: var(--icon-color);
+}
+
+.explore__btn {
+  @include btn;
+  margin-bottom: 25px;
+}

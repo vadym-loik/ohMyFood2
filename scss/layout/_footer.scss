@@ -1,0 +1,31 @@
+.footer {
+  padding: 30px 20px;
+  background-color: rgb(43, 43, 43);
+}
+
+.footer__logo {
+  width: 95px;
+
+  margin-bottom: 15px;
+}
+
+.footer__logo--img {
+  fill: var(--btn-text-color);
+  width: 95px;
+  height: 17px;
+}
+
+.fa-utensils,
+.fa-handshake-angle {
+  margin-right: 5px;
+}
+
+.footer__list {
+  color: var(--btn-text-color);
+
+  font-size: 14px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 5px;
+}

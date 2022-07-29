@@ -1,0 +1,17 @@
+@import '../utils/mixins';
+
+.dish__header {
+  @include menuHead;
+}
+
+.dish__wrap {
+  @include menuCard;
+
+  &:hover .dish__overlay {
+    transform: translateX(0%);
+  }
+}
+
+.dish__overlay {
+  @include overlay;
+}

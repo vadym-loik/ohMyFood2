@@ -1,0 +1,13 @@
+@import 'base/reset';
+@import 'base/variables';
+
+@import 'layout/header';
+@import 'layout/explore';
+@import 'layout/instructions';
+@import 'layout/restaurants';
+@import 'layout/menu';
+@import 'layout/footer';
+
+@import 'pages/index';
+
+@import 'utils/mixins';
