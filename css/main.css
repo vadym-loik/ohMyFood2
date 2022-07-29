@@ -380,6 +380,11 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.entrees__wrap:hover .price {
+  margin-right: 55px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .fa-circle-check {
   background-color: var(--tertiary-color);
   color: var(--btn-text-color);
@@ -517,4 +522,198 @@ a {
 
 .footer__item:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.entrees__one {
+  -webkit-animation: card-load 150ms ease-in 300ms;
+          animation: card-load 150ms ease-in 300ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.entrees__two {
+  -webkit-animation: card-load 150ms ease-in 500ms;
+          animation: card-load 150ms ease-in 500ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.entrees__three {
+  -webkit-animation: card-load 150ms ease-in 700ms;
+          animation: card-load 150ms ease-in 700ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.dish__one {
+  -webkit-animation: card-load 150ms ease-in 300ms;
+          animation: card-load 150ms ease-in 300ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.dish__two {
+  -webkit-animation: card-load 150ms ease-in 500ms;
+          animation: card-load 150ms ease-in 500ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.dish__three {
+  -webkit-animation: card-load 150ms ease-in 700ms;
+          animation: card-load 150ms ease-in 700ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.desserts__one {
+  -webkit-animation: card-load 150ms ease-in 300ms;
+          animation: card-load 150ms ease-in 300ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.desserts__two {
+  -webkit-animation: card-load 150ms ease-in 500ms;
+          animation: card-load 150ms ease-in 500ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.desserts__three {
+  -webkit-animation: card-load 150ms ease-in 700ms;
+          animation: card-load 150ms ease-in 700ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes card-load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes card-load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.entrees__one {
+  -webkit-animation: card-load 150ms ease-in 300ms;
+          animation: card-load 150ms ease-in 300ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.entrees__two {
+  -webkit-animation: card-load 150ms ease-in 500ms;
+          animation: card-load 150ms ease-in 500ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.entrees__three {
+  -webkit-animation: card-load 150ms ease-in 700ms;
+          animation: card-load 150ms ease-in 700ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.dish__one {
+  -webkit-animation: card-load 150ms ease-in 300ms;
+          animation: card-load 150ms ease-in 300ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.dish__two {
+  -webkit-animation: card-load 150ms ease-in 500ms;
+          animation: card-load 150ms ease-in 500ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.dish__three {
+  -webkit-animation: card-load 150ms ease-in 700ms;
+          animation: card-load 150ms ease-in 700ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.desserts__one {
+  -webkit-animation: card-load 150ms ease-in 300ms;
+          animation: card-load 150ms ease-in 300ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.desserts__two {
+  -webkit-animation: card-load 150ms ease-in 500ms;
+          animation: card-load 150ms ease-in 500ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.desserts__three {
+  -webkit-animation: card-load 150ms ease-in 700ms;
+          animation: card-load 150ms ease-in 700ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes card-load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main.css.map */
