@@ -1,0 +1,43 @@
+@import '../utils/mixins';
+
+.entrees__one {
+  @include cardLoad(card-load 150ms ease-in 300ms);
+}
+.entrees__two {
+  @include cardLoad(card-load 150ms ease-in 500ms);
+}
+.entrees__three {
+  @include cardLoad(card-load 150ms ease-in 700ms);
+}
+
+.dish__one {
+  @include cardLoad(card-load 150ms ease-in 300ms);
+}
+.dish__two {
+  @include cardLoad(card-load 150ms ease-in 500ms);
+}
+.dish__three {
+  @include cardLoad(card-load 150ms ease-in 700ms);
+}
+
+.desserts__one {
+  @include cardLoad(card-load 150ms ease-in 300ms);
+}
+.desserts__two {
+  @include cardLoad(card-load 150ms ease-in 500ms);
+}
+.desserts__three {
+  @include cardLoad(card-load 150ms ease-in 700ms);
+}
+
+@keyframes card-load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
