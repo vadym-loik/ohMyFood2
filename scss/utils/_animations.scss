@@ -9,6 +9,9 @@
 .entrees__three {
   @include cardLoad(card-load 150ms ease-in 700ms);
 }
+.entrees__four {
+  @include cardLoad(card-load 150ms ease-in 900ms);
+}
 
 .dish__one {
   @include cardLoad(card-load 150ms ease-in 300ms);
