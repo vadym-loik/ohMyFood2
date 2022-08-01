@@ -275,6 +275,182 @@ a {
   margin-bottom: 5px;
 }
 
+.entrees__one {
+  -webkit-animation: card-load 150ms ease-in 300ms;
+          animation: card-load 150ms ease-in 300ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.entrees__two {
+  -webkit-animation: card-load 150ms ease-in 500ms;
+          animation: card-load 150ms ease-in 500ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.entrees__three {
+  -webkit-animation: card-load 150ms ease-in 700ms;
+          animation: card-load 150ms ease-in 700ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.entrees__four {
+  -webkit-animation: card-load 150ms ease-in 900ms;
+          animation: card-load 150ms ease-in 900ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.dish__one {
+  -webkit-animation: card-load 150ms ease-in 300ms;
+          animation: card-load 150ms ease-in 300ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.dish__two {
+  -webkit-animation: card-load 150ms ease-in 500ms;
+          animation: card-load 150ms ease-in 500ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.dish__three {
+  -webkit-animation: card-load 150ms ease-in 700ms;
+          animation: card-load 150ms ease-in 700ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.desserts__one {
+  -webkit-animation: card-load 150ms ease-in 300ms;
+          animation: card-load 150ms ease-in 300ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.desserts__two {
+  -webkit-animation: card-load 150ms ease-in 500ms;
+          animation: card-load 150ms ease-in 500ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.desserts__three {
+  -webkit-animation: card-load 150ms ease-in 700ms;
+          animation: card-load 150ms ease-in 700ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes card-load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes card-load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 481px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 1200px;
+  }
+  .instructions__heading {
+    text-align: center;
+  }
+  .instructions__list {
+    display: flex;
+  }
+  .instructions__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .restaurants__heading {
+    text-align: center;
+  }
+  .restaurants__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .restaurants__card {
+    width: 100%;
+    flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: 20px;
+  }
+  .menu__heading {
+    margin: 0 auto;
+  }
+  .menu__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  .entrees,
+.dish,
+.desserts {
+    padding: 0 15px;
+  }
+  .entrees__wrap,
+.dish__wrap,
+.desserts__wrap {
+    max-width: 300px;
+  }
+  .entrees__text,
+.dish__text,
+.desserts__text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 20px;
+  }
+  .footer__logo {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 .logo__second {
   position: relative;
 }
@@ -291,34 +467,6 @@ a {
   width: 100%;
   max-height: 320px;
   overflow: hidden;
-}
-
-.menu {
-  margin-top: -40px;
-  position: relative;
-  z-index: 1;
-  background-color: var(--background-color);
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  padding: 25px 15px;
-}
-
-.menu__wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 25px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.menu__heading {
-  font-family: var(--second-font);
-  font-size: var(--h1-font-size);
-}
-
-.price {
-  font-weight: 500;
 }
 
 .entrees,
@@ -502,352 +650,4 @@ a {
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   padding: 15px 25px;
   padding: 15px 70px;
-}
-
-.footer {
-  padding: 30px 20px;
-  background-color: rgb(43, 43, 43);
-}
-
-.footer__logo {
-  width: 95px;
-  margin-bottom: 15px;
-}
-
-.footer__logo--img {
-  fill: var(--btn-text-color);
-  width: 95px;
-  height: 17px;
-}
-
-.fa-utensils,
-.fa-handshake-angle {
-  margin-right: 5px;
-}
-
-.footer__list {
-  color: var(--btn-text-color);
-  font-size: 14px;
-}
-
-.footer__item:not(:last-child) {
-  margin-bottom: 5px;
-}
-
-.entrees__one {
-  -webkit-animation: card-load 150ms ease-in 300ms;
-          animation: card-load 150ms ease-in 300ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.entrees__two {
-  -webkit-animation: card-load 150ms ease-in 500ms;
-          animation: card-load 150ms ease-in 500ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.entrees__three {
-  -webkit-animation: card-load 150ms ease-in 700ms;
-          animation: card-load 150ms ease-in 700ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.entrees__four {
-  -webkit-animation: card-load 150ms ease-in 900ms;
-          animation: card-load 150ms ease-in 900ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.dish__one {
-  -webkit-animation: card-load 150ms ease-in 300ms;
-          animation: card-load 150ms ease-in 300ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.dish__two {
-  -webkit-animation: card-load 150ms ease-in 500ms;
-          animation: card-load 150ms ease-in 500ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.dish__three {
-  -webkit-animation: card-load 150ms ease-in 700ms;
-          animation: card-load 150ms ease-in 700ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.desserts__one {
-  -webkit-animation: card-load 150ms ease-in 300ms;
-          animation: card-load 150ms ease-in 300ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.desserts__two {
-  -webkit-animation: card-load 150ms ease-in 500ms;
-          animation: card-load 150ms ease-in 500ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.desserts__three {
-  -webkit-animation: card-load 150ms ease-in 700ms;
-          animation: card-load 150ms ease-in 700ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@-webkit-keyframes card-load {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes card-load {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@media screen and (min-width: 481px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 769px) {
-  .container {
-    max-width: 1200px;
-  }
-  .instructions__heading {
-    text-align: center;
-  }
-  .instructions__list {
-    display: flex;
-  }
-  .instructions__item:not(:last-child) {
-    margin-bottom: 0;
-    margin-right: 30px;
-  }
-  .restaurants__heading {
-    text-align: center;
-  }
-  .restaurants__wrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  .restaurants__card {
-    width: 100%;
-    flex-basis: calc((100% - 60px) / 2);
-    margin-bottom: 20px;
-  }
-  .menu__heading {
-    margin: 0 auto;
-  }
-  .menu__wrapper {
-    display: flex;
-    justify-content: space-around;
-  }
-  .entrees,
-.dish,
-.desserts {
-    padding: 0 15px;
-  }
-  .footer__logo {
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-  .footer__list {
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
-.entrees__one {
-  -webkit-animation: card-load 150ms ease-in 300ms;
-          animation: card-load 150ms ease-in 300ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.entrees__two {
-  -webkit-animation: card-load 150ms ease-in 500ms;
-          animation: card-load 150ms ease-in 500ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.entrees__three {
-  -webkit-animation: card-load 150ms ease-in 700ms;
-          animation: card-load 150ms ease-in 700ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.entrees__four {
-  -webkit-animation: card-load 150ms ease-in 900ms;
-          animation: card-load 150ms ease-in 900ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.dish__one {
-  -webkit-animation: card-load 150ms ease-in 300ms;
-          animation: card-load 150ms ease-in 300ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.dish__two {
-  -webkit-animation: card-load 150ms ease-in 500ms;
-          animation: card-load 150ms ease-in 500ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.dish__three {
-  -webkit-animation: card-load 150ms ease-in 700ms;
-          animation: card-load 150ms ease-in 700ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.desserts__one {
-  -webkit-animation: card-load 150ms ease-in 300ms;
-          animation: card-load 150ms ease-in 300ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.desserts__two {
-  -webkit-animation: card-load 150ms ease-in 500ms;
-          animation: card-load 150ms ease-in 500ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.desserts__three {
-  -webkit-animation: card-load 150ms ease-in 700ms;
-          animation: card-load 150ms ease-in 700ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes card-load {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@media screen and (min-width: 481px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 769px) {
-  .container {
-    max-width: 1200px;
-  }
-  .instructions__heading {
-    text-align: center;
-  }
-  .instructions__list {
-    display: flex;
-  }
-  .instructions__item:not(:last-child) {
-    margin-bottom: 0;
-    margin-right: 30px;
-  }
-  .restaurants__heading {
-    text-align: center;
-  }
-  .restaurants__wrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  .restaurants__card {
-    width: 100%;
-    flex-basis: calc((100% - 60px) / 2);
-    margin-bottom: 20px;
-  }
-  .menu__heading {
-    margin: 0 auto;
-  }
-  .menu__wrapper {
-    display: flex;
-    justify-content: space-around;
-  }
-  .entrees,
-.dish,
-.desserts {
-    padding: 0 15px;
-  }
-  .footer__logo {
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-  .footer__list {
-    display: flex;
-    justify-content: space-evenly;
-  }
 }/*# sourceMappingURL=main.css.map */
