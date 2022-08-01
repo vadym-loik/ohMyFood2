@@ -136,20 +136,13 @@ a {
   margin-bottom: 25px;
 }
 
-.instructions__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .instructions__item {
   display: flex;
   position: relative;
   box-shadow: 0px 3px 7px 0px var(--shadow-color);
   border-radius: 15px;
   background-color: var(--background-color);
-  width: 93%;
+  width: 100%;
   padding: 20px 25px;
 }
 .instructions__item:not(:last-child) {
@@ -297,6 +290,7 @@ a {
 .background {
   width: 100%;
   max-height: 320px;
+  overflow: hidden;
 }
 
 .menu {
@@ -382,7 +376,6 @@ a {
 
 .entrees__wrap:hover .price {
   margin-right: 55px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fa-circle-check {
@@ -426,6 +419,10 @@ a {
   transform: translateX(0%);
 }
 
+.dish__wrap:hover .price {
+  margin-right: 55px;
+}
+
 .dish__overlay {
   position: absolute;
   right: 0;
@@ -464,6 +461,10 @@ a {
 }
 .desserts__wrap:hover .desserts__overlay {
   transform: translateX(0%);
+}
+
+.desserts__wrap:hover .price {
+  margin-right: 55px;
 }
 
 .desserts__overlay {
@@ -551,6 +552,15 @@ a {
   opacity: 0;
 }
 
+.entrees__four {
+  -webkit-animation: card-load 150ms ease-in 900ms;
+          animation: card-load 150ms ease-in 900ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
 .dish__one {
   -webkit-animation: card-load 150ms ease-in 300ms;
           animation: card-load 150ms ease-in 300ms;
@@ -626,6 +636,59 @@ a {
     opacity: 1;
   }
 }
+@media screen and (min-width: 481px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 1200px;
+  }
+  .instructions__heading {
+    text-align: center;
+  }
+  .instructions__list {
+    display: flex;
+  }
+  .instructions__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .restaurants__heading {
+    text-align: center;
+  }
+  .restaurants__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .restaurants__card {
+    width: 100%;
+    flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: 20px;
+  }
+  .menu__heading {
+    margin: 0 auto;
+  }
+  .menu__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  .entrees,
+.dish,
+.desserts {
+    padding: 0 15px;
+  }
+  .footer__logo {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 .entrees__one {
   -webkit-animation: card-load 150ms ease-in 300ms;
           animation: card-load 150ms ease-in 300ms;
@@ -647,6 +710,15 @@ a {
 .entrees__three {
   -webkit-animation: card-load 150ms ease-in 700ms;
           animation: card-load 150ms ease-in 700ms;
+  transform: translateY(-20px);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.entrees__four {
+  -webkit-animation: card-load 150ms ease-in 900ms;
+          animation: card-load 150ms ease-in 900ms;
   transform: translateY(-20px);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -715,5 +787,58 @@ a {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media screen and (min-width: 481px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 1200px;
+  }
+  .instructions__heading {
+    text-align: center;
+  }
+  .instructions__list {
+    display: flex;
+  }
+  .instructions__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .restaurants__heading {
+    text-align: center;
+  }
+  .restaurants__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .restaurants__card {
+    width: 100%;
+    flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: 20px;
+  }
+  .menu__heading {
+    margin: 0 auto;
+  }
+  .menu__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  .entrees,
+.dish,
+.desserts {
+    padding: 0 15px;
+  }
+  .footer__logo {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: space-evenly;
   }
 }/*# sourceMappingURL=main.css.map */
