@@ -1,0 +1,66 @@
+@media screen and (min-width: 481px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .instructions__heading {
+    text-align: center;
+  }
+
+  .instructions__list {
+    display: flex;
+  }
+
+  .instructions__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .restaurants__heading {
+    text-align: center;
+  }
+
+  .restaurants__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .restaurants__card {
+    width: 100%;
+    flex-basis: calc((100% - 4 * 15px) / 2);
+
+    margin-bottom: 20px;
+  }
+
+  .menu__heading {
+    margin: 0 auto;
+  }
+
+  .menu__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .entrees,
+  .dish,
+  .desserts {
+    padding: 0 15px;
+  }
+
+  .footer__logo {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .footer__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
