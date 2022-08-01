@@ -54,6 +54,20 @@
     padding: 0 15px;
   }
 
+  .entrees__wrap,
+  .dish__wrap,
+  .desserts__wrap {
+    max-width: 300px;
+  }
+
+  .entrees__text,
+  .dish__text,
+  .desserts__text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 20px;
+  }
+
   .footer__logo {
     margin: 0 auto;
     padding-bottom: 20px;
