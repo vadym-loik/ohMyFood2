@@ -12,6 +12,11 @@
   }
 }
 
+.dish__wrap:hover .price {
+  margin-right: 55px;
+  // transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .dish__overlay {
   @include overlay;
 }
