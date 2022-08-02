@@ -15,6 +15,9 @@
 .dish__heading,
 .desserts__heading {
   margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .entrees__header {
@@ -24,12 +27,13 @@
 .entrees__wrap {
   @include menuCard;
 
-  &:hover .entrees__overlay {
-    transform: translateX(0%);
+  &:hover {
+    padding-right: 60px;
   }
 
-  &:hover .fa-circle-check::before {
-    transition: transform 500ms ease;
+  &:hover .entrees__overlay {
+    opacity: 1;
+    transform: translate(-50px);
   }
 }
 
@@ -37,24 +41,12 @@
   @include overlay;
 }
 
-.entrees__wrap:hover .price {
-  margin-right: 55px;
-}
-
-.fa-circle-check {
-  color: var(--btn-text-color);
-
-  padding: 35px 20px;
-}
-
-.fa-circle-check::before {
-  transform: rotate(360deg);
-}
-
 .entrees__text,
 .dish__text,
 .desserts__text {
   font-weight: 300;
-  display: flex;
-  justify-content: space-between;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
