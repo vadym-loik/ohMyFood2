@@ -25,6 +25,16 @@
   font-size: var(--h1-font-size);
 }
 
+.entrees__text--wrap, 
+.dish__text--wrap, 
+.desserts__text--wrap {
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
 .price {
   font-weight: 500;
 }
