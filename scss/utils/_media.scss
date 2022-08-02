@@ -1,12 +1,16 @@
 @media screen and (min-width: 481px) {
   .container {
-    max-width: 768px;
+    max-width: 767px;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 1200px;
+    max-width: 1900px;
+  }
+
+  .instructions__item {
+    align-items: center;
   }
 
   .instructions__heading {
@@ -45,19 +49,19 @@
 
   .menu__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .entrees,
-  .dish,
-  .desserts {
-    padding: 0 15px;
+  .dish {
+    margin-right: 25px;
   }
 
   .entrees__wrap,
   .dish__wrap,
   .desserts__wrap {
-    max-width: 300px;
+    width: 300px;
   }
 
   .entrees__text,
@@ -76,5 +80,11 @@
   .footer__list {
     display: flex;
     justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1190px) {
+  .restaurants__card {
+    flex-basis: calc((100% - 4 * 15px) / 4);
   }
 }
