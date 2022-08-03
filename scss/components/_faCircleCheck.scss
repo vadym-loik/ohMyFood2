@@ -2,4 +2,14 @@
   color: var(--btn-text-color);
 
   padding: 37px 15px;
+
+  transition: transform 400ms ease-in-out;
+}
+
+.entrees__wrap,
+.dish__wrap,
+.desserts__wrap {
+  &:hover .fa-circle-check {
+    transform: rotate(360deg);
+  }
 }
