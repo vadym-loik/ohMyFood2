@@ -722,8 +722,8 @@ a {
   border-radius: 50%;
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   position: relative;
-  -webkit-animation: load3 1.4s infinite linear;
-  animation: load3 1.4s infinite linear;
+  -webkit-animation: load 1.4s infinite linear;
+          animation: load 1.4s infinite linear;
   transform: translateZ(0);
 }
 
@@ -751,7 +751,7 @@ a {
   right: 0;
 }
 
-@-webkit-keyframes load3 {
+@-webkit-keyframes load {
   0% {
     transform: rotate(0deg);
   }
@@ -760,7 +760,7 @@ a {
   }
 }
 
-@keyframes load3 {
+@keyframes load {
   0% {
     transform: rotate(0deg);
   }
