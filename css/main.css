@@ -114,6 +114,10 @@ a {
   padding: 15px 25px;
   margin-bottom: 25px;
 }
+.explore__btn:hover {
+  box-shadow: 0px 5px 9px 2px var(--shadow-color);
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.75) 0%, rgba(255, 121, 218, 0.75) 100%);
+}
 
 .instructions {
   padding: 20px 20px;
@@ -667,6 +671,10 @@ a {
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   padding: 15px 25px;
   padding: 15px 70px;
+}
+.order__btn:hover {
+  box-shadow: 0px 5px 9px 2px var(--shadow-color);
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.75) 0%, rgba(255, 121, 218, 0.75) 100%);
 }
 
 .fa-circle-check {
