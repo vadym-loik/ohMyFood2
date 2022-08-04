@@ -699,8 +699,8 @@ a {
   height: 100%;
   background: var(--btn-text-color);
   z-index: 1001;
-  -webkit-animation: loaderHidden 1.5s forwards;
-          animation: loaderHidden 1.5s forwards;
+  -webkit-animation: loaderHidden 3s forwards;
+          animation: loaderHidden 3s forwards;
 }
 
 @-webkit-keyframes loaderHidden {
@@ -720,59 +720,62 @@ a {
     visibility: hidden;
   }
 }
+.loader,
+.loader:before,
+.loader:after {
+  background: var(--primary-color);
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+
 .loader {
-  overflow: hidden;
-  font-size: 10px;
-  margin: 300px auto;
+  color: var(--primary-color);
   text-indent: -9999em;
-  width: 11em;
-  height: 11em;
-  border-radius: 50%;
-  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  top: 50%;
+  left: 50%;
   position: relative;
-  -webkit-animation: load 1.4s infinite linear;
-          animation: load 1.4s infinite linear;
+  font-size: 11px;
   transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: "";
 }
 
 .loader:before {
-  width: 50%;
-  height: 50%;
-  border-radius: 100% 0 0 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
 }
 
 .loader:after {
-  background: var(--btn-text-color);
-  width: 75%;
-  height: 75%;
-  border-radius: 50%;
-  content: "";
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  left: 1.5em;
 }
 
-@-webkit-keyframes load {
-  0% {
-    transform: rotate(0deg);
+@-webkit-keyframes load1 {
+  0%, 80%, 100% {
+    box-shadow: 0 0;
+    height: 4em;
   }
-  100% {
-    transform: rotate(360deg);
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
   }
 }
-
-@keyframes load {
-  0% {
-    transform: rotate(0deg);
+@keyframes load1 {
+  0%, 80%, 100% {
+    box-shadow: 0 0;
+    height: 4em;
   }
-  100% {
-    transform: rotate(360deg);
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
   }
 }/*# sourceMappingURL=main.css.map */
