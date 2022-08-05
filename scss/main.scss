@@ -7,6 +7,7 @@
 @import 'layout/restaurants';
 @import 'layout/menu';
 @import 'layout/footer';
+@import 'layout/menuComposition';
 
 @import 'utils/mixins';
 @import 'utils/animations';
@@ -14,10 +15,6 @@
 
 @import 'components/secondHeader';
 @import 'components/backgroundImg';
-
-@import 'layout/entrees';
-@import 'layout/dish';
-@import 'layout/desserts';
 @import 'components/orderBtn';
 @import 'components/faCircleCheck';
 @import 'components/preloader';
