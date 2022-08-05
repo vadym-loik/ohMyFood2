@@ -241,18 +241,20 @@ a {
   padding-right: 5px;
 }
 
-.menu__heading {
+.menu__header {
   font-family: var(--second-font);
   font-size: var(--h1-font-size);
 }
 
-.entrees__text--wrap,
-.dish__text--wrap,
-.desserts__text--wrap {
+.menu__text--wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   line-height: 1.5;
+}
+
+.menu__wrapper {
+  margin-bottom: 50px;
 }
 
 .price {
@@ -290,7 +292,72 @@ a {
   margin-bottom: 5px;
 }
 
-.entrees__one {
+.menu__composition:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.menu__head {
+  margin-bottom: 15px;
+}
+
+.menu__subheading {
+  margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu__heading {
+  font-size: var(--text-size);
+  font-weight: 200;
+}
+.menu__heading::after {
+  content: "";
+  display: block;
+  width: 40px;
+  border-bottom: 3px solid var(--tertiary-color);
+  padding-top: 5px;
+}
+
+.menu__box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: var(--btn-text-color);
+  box-shadow: 0px 3px 7px 0px var(--shadow-color);
+  padding: 12px;
+  transition: padding-right 300ms ease-in-out;
+}
+.menu__box:not(:last-child) {
+  margin-bottom: 10px;
+}
+.menu__box:hover {
+  padding-right: 60px;
+}
+.menu__box:hover .menu__overlay {
+  transform: translate(-50px);
+}
+
+.menu__overlay {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
+  background-color: var(--tertiary-color);
+}
+
+.menu__text {
+  font-weight: 300;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu__one {
   -webkit-animation: card-load 150ms ease-in 300ms;
           animation: card-load 150ms ease-in 300ms;
   transform: translateY(-20px);
@@ -299,7 +366,7 @@ a {
   opacity: 0;
 }
 
-.entrees__two {
+.menu__two {
   -webkit-animation: card-load 150ms ease-in 500ms;
           animation: card-load 150ms ease-in 500ms;
   transform: translateY(-20px);
@@ -308,7 +375,7 @@ a {
   opacity: 0;
 }
 
-.entrees__three {
+.menu__three {
   -webkit-animation: card-load 150ms ease-in 700ms;
           animation: card-load 150ms ease-in 700ms;
   transform: translateY(-20px);
@@ -317,63 +384,9 @@ a {
   opacity: 0;
 }
 
-.entrees__four {
+.menu__four {
   -webkit-animation: card-load 150ms ease-in 900ms;
           animation: card-load 150ms ease-in 900ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.dish__one {
-  -webkit-animation: card-load 150ms ease-in 300ms;
-          animation: card-load 150ms ease-in 300ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.dish__two {
-  -webkit-animation: card-load 150ms ease-in 500ms;
-          animation: card-load 150ms ease-in 500ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.dish__three {
-  -webkit-animation: card-load 150ms ease-in 700ms;
-          animation: card-load 150ms ease-in 700ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.desserts__one {
-  -webkit-animation: card-load 150ms ease-in 300ms;
-          animation: card-load 150ms ease-in 300ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.desserts__two {
-  -webkit-animation: card-load 150ms ease-in 500ms;
-          animation: card-load 150ms ease-in 500ms;
-  transform: translateY(-20px);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.desserts__three {
-  -webkit-animation: card-load 150ms ease-in 700ms;
-          animation: card-load 150ms ease-in 700ms;
   transform: translateY(-20px);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -436,7 +449,7 @@ a {
     flex-basis: calc((100% - 60px) / 2);
     margin-bottom: 20px;
   }
-  .menu__heading {
+  .menu__header {
     margin: 0 auto;
   }
   .menu__wrapper {
@@ -444,18 +457,13 @@ a {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .entrees,
-.dish {
+  .menu__composition:not(:last-child) {
     margin-right: 25px;
   }
-  .entrees__wrap,
-.dish__wrap,
-.desserts__wrap {
+  .menu__box {
     width: 300px;
   }
-  .entrees__text,
-.dish__text,
-.desserts__text {
+  .menu__text {
     text-overflow: ellipsis;
     overflow: hidden;
     height: 20px;
@@ -492,165 +500,6 @@ a {
   overflow: hidden;
 }
 
-.entrees,
-.dish {
-  margin-bottom: 25px;
-}
-
-.entrees__head,
-.dish__head,
-.desserts__head {
-  margin-bottom: 15px;
-}
-
-.entrees__heading,
-.dish__heading,
-.desserts__heading {
-  margin-bottom: 5px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.entrees__header {
-  font-size: var(--text-size);
-  font-weight: 200;
-}
-.entrees__header::after {
-  content: "";
-  display: block;
-  width: 40px;
-  border-bottom: 3px solid var(--tertiary-color);
-  padding-top: 5px;
-}
-
-.entrees__wrap {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  background-color: var(--btn-text-color);
-  box-shadow: 0px 3px 7px 0px var(--shadow-color);
-  padding: 12px;
-}
-.entrees__wrap:not(:last-child) {
-  margin-bottom: 10px;
-}
-.entrees__wrap:hover {
-  padding-right: 60px;
-}
-.entrees__wrap:hover .entrees__overlay {
-  transform: translate(-50px);
-}
-
-.entrees__overlay {
-  position: absolute;
-  right: -50px;
-  top: 0;
-  height: 100%;
-  width: 50px;
-  transform: translateX(100%);
-  transition: transform 300ms ease-in-out;
-  background-color: var(--tertiary-color);
-}
-
-.entrees__text,
-.dish__text,
-.desserts__text {
-  font-weight: 300;
-  margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.dish__header {
-  font-size: var(--text-size);
-  font-weight: 200;
-}
-.dish__header::after {
-  content: "";
-  display: block;
-  width: 40px;
-  border-bottom: 3px solid var(--tertiary-color);
-  padding-top: 5px;
-}
-
-.dish__wrap {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  background-color: var(--btn-text-color);
-  box-shadow: 0px 3px 7px 0px var(--shadow-color);
-  padding: 12px;
-}
-.dish__wrap:not(:last-child) {
-  margin-bottom: 10px;
-}
-.dish__wrap:hover {
-  padding-right: 60px;
-}
-.dish__wrap:hover .dish__overlay {
-  opacity: 1;
-  transform: translate(-50px);
-}
-
-.dish__overlay {
-  position: absolute;
-  right: -50px;
-  top: 0;
-  height: 100%;
-  width: 50px;
-  transform: translateX(100%);
-  transition: transform 300ms ease-in-out;
-  background-color: var(--tertiary-color);
-}
-
-.desserts {
-  margin-bottom: 40px;
-}
-
-.desserts__header {
-  font-size: var(--text-size);
-  font-weight: 200;
-}
-.desserts__header::after {
-  content: "";
-  display: block;
-  width: 40px;
-  border-bottom: 3px solid var(--tertiary-color);
-  padding-top: 5px;
-}
-
-.desserts__wrap {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  background-color: var(--btn-text-color);
-  box-shadow: 0px 3px 7px 0px var(--shadow-color);
-  padding: 12px;
-}
-.desserts__wrap:not(:last-child) {
-  margin-bottom: 10px;
-}
-.desserts__wrap:hover {
-  padding-right: 60px;
-}
-.desserts__wrap:hover .desserts__overlay {
-  opacity: 1;
-  transform: translate(-50px);
-}
-
-.desserts__overlay {
-  position: absolute;
-  right: -50px;
-  top: 0;
-  height: 100%;
-  width: 50px;
-  transform: translateX(100%);
-  transition: transform 300ms ease-in-out;
-  background-color: var(--tertiary-color);
-}
-
 .order {
   display: flex;
   justify-content: center;
@@ -680,9 +529,7 @@ a {
   transition: transform 500ms ease-in-out;
 }
 
-.entrees__wrap:hover .fa-circle-check,
-.dish__wrap:hover .fa-circle-check,
-.desserts__wrap:hover .fa-circle-check {
+.menu__box:hover .fa-circle-check {
   transform: rotate(360deg);
 }
 
