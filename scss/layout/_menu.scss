@@ -20,19 +20,21 @@
   padding-right: 5px;
 }
 
-.menu__heading {
+.menu__header {
   font-family: var(--second-font);
   font-size: var(--h1-font-size);
 }
 
-.entrees__text--wrap,
-.dish__text--wrap,
-.desserts__text--wrap {
+.menu__text--wrap {
   display: flex;
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
   line-height: 1.5;
+}
+
+.menu__wrapper {
+  margin-bottom: 50px;
 }
 
 .price {

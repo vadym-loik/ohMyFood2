@@ -1,36 +1,16 @@
 @import '../utils/mixins';
 
-.entrees__one {
+.menu__one {
   @include cardLoad(card-load 150ms ease-in 300ms);
 }
-.entrees__two {
+.menu__two {
   @include cardLoad(card-load 150ms ease-in 500ms);
 }
-.entrees__three {
+.menu__three {
   @include cardLoad(card-load 150ms ease-in 700ms);
 }
-.entrees__four {
+.menu__four {
   @include cardLoad(card-load 150ms ease-in 900ms);
-}
-
-.dish__one {
-  @include cardLoad(card-load 150ms ease-in 300ms);
-}
-.dish__two {
-  @include cardLoad(card-load 150ms ease-in 500ms);
-}
-.dish__three {
-  @include cardLoad(card-load 150ms ease-in 700ms);
-}
-
-.desserts__one {
-  @include cardLoad(card-load 150ms ease-in 300ms);
-}
-.desserts__two {
-  @include cardLoad(card-load 150ms ease-in 500ms);
-}
-.desserts__three {
-  @include cardLoad(card-load 150ms ease-in 700ms);
 }
 
 @keyframes card-load {

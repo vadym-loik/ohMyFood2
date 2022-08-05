@@ -6,9 +6,7 @@
   transition: transform 500ms ease-in-out;
 }
 
-.entrees__wrap,
-.dish__wrap,
-.desserts__wrap {
+.menu__box {
   &:hover .fa-circle-check {
     transform: rotate(360deg);
   }
