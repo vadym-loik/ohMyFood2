@@ -1,0 +1,45 @@
+@import '../utils/mixins';
+
+.menu__composition:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.menu__head {
+  margin-bottom: 15px;
+}
+
+.menu__subheading {
+  margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu__heading {
+  @include menuHead;
+}
+
+.menu__box {
+  @include menuCard;
+  transition: padding-right 300ms ease-in-out;
+
+  &:hover {
+    padding-right: 60px;
+  }
+
+  &:hover .menu__overlay {
+    transform: translate(-50px);
+  }
+}
+
+.menu__overlay {
+  @include overlay;
+}
+
+.menu__text {
+  font-weight: 300;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
