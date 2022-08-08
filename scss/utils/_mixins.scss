@@ -31,8 +31,19 @@
     rgba(147, 86, 220, 1) 0%,
     rgba(255, 121, 218, 1) 100%
   );
+  transition: all 250ms ease-in-out;
 
   padding: 15px 25px;
+}
+
+@mixin hoverBtn() {
+  box-shadow: 0px 5px 9px 2px var(--shadow-color);
+  background: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 0.75) 0%,
+    rgba(255, 121, 218, 0.75) 100%
+  );
+  transition: all 250ms ease-in-out;
 }
 
 @mixin menuCard() {
