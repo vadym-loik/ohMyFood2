@@ -1,16 +1,16 @@
 @import '../utils/mixins';
 
 .menu__one {
-  @include cardLoad(card-load 150ms ease-in 300ms);
+  @include cardLoad(card-load 250ms ease-in 300ms);
 }
 .menu__two {
-  @include cardLoad(card-load 150ms ease-in 500ms);
+  @include cardLoad(card-load 250ms ease-in 500ms);
 }
 .menu__three {
-  @include cardLoad(card-load 150ms ease-in 700ms);
+  @include cardLoad(card-load 250ms ease-in 700ms);
 }
 .menu__four {
-  @include cardLoad(card-load 150ms ease-in 900ms);
+  @include cardLoad(card-load 250ms ease-in 900ms);
 }
 
 @keyframes card-load {
