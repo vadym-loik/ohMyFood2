@@ -55,6 +55,7 @@ a {
   --background-color: #f5f5f5;
   --icon-color: grey;
   --shadow-color: #c7c7c7;
+  --fa-inverse: #9356dc;
   --h1-font-size: 30px;
   --h2-font-size: 24px;
   --h3-font-size: 20px;
@@ -146,11 +147,22 @@ a {
   box-shadow: 0px 3px 7px 0px var(--shadow-color);
   border-radius: 15px;
   background-color: var(--background-color);
+  transition: all 350ms ease-in-out;
   width: 100%;
   padding: 20px 25px;
+  cursor: pointer;
 }
 .instructions__item:not(:last-child) {
   margin-bottom: 15px;
+}
+.instructions__item:hover {
+  background-color: rgba(223, 194, 242, 0.5);
+  box-shadow: 0px 5px 9px 0px var(--shadow-color);
+  transition: all 350ms ease-in-out;
+}
+.instructions__item:hover .fa-mobile-screen-button, .instructions__item:hover .fa-list-ul, .instructions__item:hover .fa-store {
+  color: var(--fa-inverse);
+  transition: all 350ms ease-in-out;
 }
 
 .fa-mobile-screen-button,
@@ -193,6 +205,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 350ms ease-in-out;
   padding: 15px;
 }
 
@@ -204,6 +217,7 @@ a {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   cursor: pointer;
+  transition: all 350ms ease-in-out;
 }
 
 .restaurants__head {
@@ -358,8 +372,8 @@ a {
 }
 
 .menu__one {
-  -webkit-animation: card-load 150ms ease-in 300ms;
-          animation: card-load 150ms ease-in 300ms;
+  -webkit-animation: card-load 250ms ease-in 300ms;
+          animation: card-load 250ms ease-in 300ms;
   transform: translateY(-20px);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -367,8 +381,8 @@ a {
 }
 
 .menu__two {
-  -webkit-animation: card-load 150ms ease-in 500ms;
-          animation: card-load 150ms ease-in 500ms;
+  -webkit-animation: card-load 250ms ease-in 500ms;
+          animation: card-load 250ms ease-in 500ms;
   transform: translateY(-20px);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -376,8 +390,8 @@ a {
 }
 
 .menu__three {
-  -webkit-animation: card-load 150ms ease-in 700ms;
-          animation: card-load 150ms ease-in 700ms;
+  -webkit-animation: card-load 250ms ease-in 700ms;
+          animation: card-load 250ms ease-in 700ms;
   transform: translateY(-20px);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -385,8 +399,8 @@ a {
 }
 
 .menu__four {
-  -webkit-animation: card-load 150ms ease-in 900ms;
-          animation: card-load 150ms ease-in 900ms;
+  -webkit-animation: card-load 250ms ease-in 900ms;
+          animation: card-load 250ms ease-in 900ms;
   transform: translateY(-20px);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
