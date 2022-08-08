@@ -32,13 +32,28 @@
   box-shadow: 0px 3px 7px 0px var(--shadow-color);
   border-radius: 15px;
   background-color: var(--background-color);
+  transition: all 350ms ease-in-out;
 
   width: 100%;
 
   padding: 20px 25px;
+  cursor: pointer;
 
   &:not(:last-child) {
     margin-bottom: 15px;
+  }
+
+  &:hover {
+    background-color: rgba(223, 194, 242, 0.5);
+    box-shadow: 0px 5px 9px 0px var(--shadow-color);
+    transition: all 350ms ease-in-out;
+  }
+
+  &:hover .fa-mobile-screen-button,
+  &:hover .fa-list-ul,
+  &:hover .fa-store {
+    color: var(--fa-inverse);
+    transition: all 350ms ease-in-out;
   }
 }
 
