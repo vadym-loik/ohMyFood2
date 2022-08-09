@@ -74,15 +74,18 @@ a {
 }
 
 .nav__wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: inset 0px 5px 5px 0px var(--shadow);
   background-color: #e6e9eb;
   padding: 10px 0;
 }
 .nav .fa-location-dot {
   margin-right: 15px;
+}
+
+.nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .explore__wrap {
