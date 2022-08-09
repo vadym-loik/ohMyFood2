@@ -13,7 +13,6 @@
 
 .nav {
   &__wrap {
-    @include flexCenter;
     box-shadow: inset 0px 5px 5px 0px var(--shadow);
     background-color: #e6e9eb;
 
@@ -23,4 +22,8 @@
   .fa-location-dot {
     margin-right: 15px;
   }
+}
+
+.nav__link {
+  @include flexCenter;
 }
